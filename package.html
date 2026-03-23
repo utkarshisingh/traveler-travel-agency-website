@@ -33,26 +33,26 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>utkarshi@gmail.com</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91 7825694130</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.facebook.com/profile.php?id=61572640974966">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://x.com/utkarshisingh">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.linkedin.com/in/utkarshi-singh/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.instagram.com/breezytrend/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-primary pl-3" href="">
+                        <a class="text-primary pl-3" href="https://www.youtube.com/@learninglighthouse-25">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -79,17 +79,8 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="package.html" class="nav-item nav-link active">Tour Packages</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
                     </div>
                 </div>
             </nav>
@@ -127,33 +118,39 @@
                                         <div class="mb-3 mb-md-0">
                                             <select class="custom-select px-4" style="height: 47px;" id="destination" name="destination" required="required">
                                                 <option selected>Destination</option>
-                                                <option value="1">Destination 1</option>
-                                                <option value="2">Destination 2</option>
-                                                <option value="3">Destination 3</option>
+                                                <option value="" disabled selected>Select Destination</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Manali">Manali</option>
+                                                <option value="Jaipur">Jaipur</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Dubai">Dubai</option>
+                                                <option value="Paris">Paris</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="mb-3 mb-md-0">
                                             <div class="date" id="date1" data-target-input="nearest">
-                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="depart-date" name="depart-date" class="form-control p-4 " placeholder="Depart Date"  required="required"/>
+                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="depart-date" name="depart_date" class="form-control p-4 " placeholder="Depart Date"  required="required"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="mb-3 mb-md-0">
                                             <div class="date" id="date2" data-target-input="nearest">
-                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date" name="return-date" class="form-control p-4 " placeholder="Return Date"  required="required"/>
+                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date" name="return_date" class="form-control p-4 " placeholder="Return Date"  required="required"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="mb-3 mb-md-0">
                                             <select class="custom-select px-4" id="duration" name="duration" style="height: 47px;" required="required">
-                                                <option selected>Duration</option>
-                                                <option value="1">Duration 1</option>
-                                                <option value="2">Duration 2</option>
-                                                <option value="3">Duration 3</option>
+                                              <option selected>Duration</option>
+                                                <option value="2 Days">2 Days</option>
+                                                <option value="3 Days">3 Days</option>
+                                                <option value="5 Days">5 Days</option>
+                                                <option value="7 Days">1 Week</option>
+                                                <option value="10 Days">10 Days</option>  
                                             </select>
                                         </div>
                                     </div>
@@ -184,15 +181,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Paris</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>4 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Explore extraordinary destinations around the globe with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹7350</h5>
+                                    <button onclick="addToCart('Paris', 7350)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -204,14 +202,16 @@
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>2 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>5 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Find your next favorite place—discover the world with us.</a>
+                            <a class="h5 text-decoration-none" href=""></a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.3 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹8350</h5>
+                                    <button onclick="addToCart('Paris', 7350)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -222,15 +222,16 @@
                         <img class="img-fluid" src="img/package-3.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Italy</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>6 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Uncover breathtaking destinations worldwide with our help.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>3.6 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹3350</h5>
+                                    <button onclick="addToCart('Paris', 7350)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -241,15 +242,16 @@
                         <img class="img-fluid" src="img/package-4.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>U.S.A</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>5 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>7 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Step into unforgettable experiences across the world with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>2.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹9350</h5>
+                                    <button onclick="addToCart('Paris', 7350)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -260,15 +262,16 @@
                         <img class="img-fluid" src="img/package-5.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Greece</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>8 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>4 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Travel beyond the ordinary—discover amazing places with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹1350</h5>
+                                    <button onclick="addToCart('Paris', 7350)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -279,15 +282,16 @@
                         <img class="img-fluid" src="img/package-6.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>France</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>2 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Embark on a world tour of amazing places with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>3.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹6350</h5>
+                                    <button onclick="addToCart('Paris', 7350)">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +316,7 @@
                         <img class="img-fluid" src="img/destination-1.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">United States</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -321,7 +325,7 @@
                         <img class="img-fluid" src="img/destination-2.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -330,7 +334,7 @@
                         <img class="img-fluid" src="img/destination-3.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">Australia</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -339,7 +343,7 @@
                         <img class="img-fluid" src="img/destination-4.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">India</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -348,7 +352,7 @@
                         <img class="img-fluid" src="img/destination-5.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">South Africa</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -357,7 +361,7 @@
                         <img class="img-fluid" src="img/destination-6.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -374,13 +378,13 @@
                 <a href="" class="navbar-brand">
                     <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <p>We are committed to providing high-quality travel services with affordable pricing and excellent customer support.</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://x.com/utkarshisingh" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/profile.php?id=61572640974966" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/in/utkarshi-singh/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/breezytrend/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -409,9 +413,9 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Cheheru, Jalandhar, India</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 7825694130</p>
+                <p><i class="fa fa-envelope mr-2"></i>utkarshi@gmail.com</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <form action="newsletter_sub.php" method="post">
@@ -457,6 +461,19 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+<script>
+let count = localStorage.getItem("cartCount") || 0;
+
+function addToCart() {
+    count++;
+    localStorage.setItem("cartCount", count);
+    document.getElementById("cart-count").innerText = count;
+    alert("Package added to cart!");
+}
+
+document.getElementById("cart-count").innerText = count;
+</script>
+
 </body>
 
 </html>
