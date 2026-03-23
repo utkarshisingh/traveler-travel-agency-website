@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6VR1ZR9HFT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6VR1ZR9HFT');
-</script>
-
     <meta charset="utf-8">
     <title>TRAVELER - Tours & Travel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -43,26 +33,26 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>utkarshi@gmail.com</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91 7825694130</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.facebook.com/profile.php?id=61572640974966">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://x.com/utkarshisingh">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.linkedin.com/in/utkarshi-singh/">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a class="text-primary px-3" href="">
+                        <a class="text-primary px-3" href="https://www.instagram.com/breezytrend/">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-primary pl-3" href="">
+                        <a class="text-primary pl-3" href="https://www.youtube.com/@learninglighthouse-25">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -89,17 +79,11 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="package.html" class="nav-item nav-link">Tour Packages</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                <a href="destination.html" class="dropdown-item">Destination</a>
-                                <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="cart.html" class="nav-item nav-link">
+    Cart (<span id="cart-count">0</span>)
+</a>
+
                     </div>
                 </div>
             </nav>
@@ -118,7 +102,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
                             <h1 class="display-3 text-white mb-md-4">Let's Discover The World Together</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                            <a href="#booking" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +112,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
                             <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                            <a href="#booking" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -150,34 +134,37 @@
 
     <!-- Booking Start -->
     
-    <div class="container-fluid booking mt-5 pb-5">
+    <div id="booking" class="container-fluid booking mt-5 pb-5">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
-                <form name="sentMessage" id="contactForm" action="booking_form.php" method="post">
+                <form onsubmit="alert('Booking Successful!'); return false;">
                     <div class="row align-items-center" style="min-height: 60px;">
                         <div class="col-md-10">
                             <div class="row">
                                     <div class="col-md-3">
                                         <div class="mb-3 mb-md-0">
                                             <select class="custom-select px-4" style="height: 47px;" id="destination" name="destination" required="required">
-                                                <option selected>Destination</option>
-                                                <option value="1">Destination 1</option>
-                                                <option value="2">Destination 2</option>
-                                                <option value="3">Destination 3</option>
+                                                <option value="" disabled selected>Select Destination</option>
+                                                <option value="Goa">Goa</option>
+                                                <option value="Manali">Manali</option>
+                                                <option value="Jaipur">Jaipur</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Dubai">Dubai</option>
+                                                <option value="Paris">Paris</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="mb-3 mb-md-0">
                                             <div class="date" id="date1" data-target-input="nearest">
-                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="depart-date" name="depart-date" class="form-control p-4 " placeholder="Depart Date"  required="required"/>
+                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="depart-date" name="depart_date" class="form-control p-4 " placeholder="Depart Date"  required="required"/>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="mb-3 mb-md-0">
                                             <div class="date" id="date2" data-target-input="nearest">
-                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date" name="return-date" class="form-control p-4 " placeholder="Return Date"  required="required"/>
+                                                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="return-date" name="return_date" class="form-control p-4 " placeholder="Return Date"  required="required"/>
                                             </div>
                                         </div>
                                     </div>
@@ -185,9 +172,11 @@
                                         <div class="mb-3 mb-md-0">
                                             <select class="custom-select px-4" id="duration" name="duration" style="height: 47px;" required="required">
                                                 <option selected>Duration</option>
-                                                <option value="1">Duration 1</option>
-                                                <option value="2">Duration 2</option>
-                                                <option value="3">Duration 3</option>
+                                                <option value="2 Days">2 Days</option>
+                                                <option value="3 Days">3 Days</option>
+                                                <option value="5 Days">5 Days</option>
+                                                <option value="7 Days">1 Week</option>
+                                                <option value="10 Days">10 Days</option>
                                             </select>
                                         </div>
                                     </div>
@@ -218,7 +207,7 @@
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
                         <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
-                        <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                        <p>We provide the best travel services across India with affordable and comfortable packages for all customers.</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="img/about-1.jpg" alt="">
@@ -227,7 +216,7 @@
                                 <img class="img-fluid" src="img/about-2.jpg" alt="">
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary mt-1">Book Now</a>
+                        <a href="#booking" class="btn btn-primary mt-1">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -247,7 +236,7 @@
                         </div>
                         <div class="d-flex flex-column">
                             <h5 class="">Competitive Pricing</h5>
-                            <p class="m-0">Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                            <p class="m-0">We offer competitive pricing to ensure you get the best value for your travel experience.</p>
                         </div>
                     </div>
                 </div>
@@ -258,7 +247,7 @@
                         </div>
                         <div class="d-flex flex-column">
                             <h5 class="">Best Services</h5>
-                            <p class="m-0">Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                            <p class="m-0">Our services are designed to provide maximum comfort and satisfaction to our customers.</p>
                         </div>
                     </div>
                 </div>
@@ -269,7 +258,7 @@
                         </div>
                         <div class="d-flex flex-column">
                             <h5 class="">Worldwide Coverage</h5>
-                            <p class="m-0">Magna sit magna dolor duo dolor labore rebum amet elitr est diam sea</p>
+                            <p class="m-0">We provide travel solutions across India with reliable support and quality service.</p>
                         </div>
                     </div>
                 </div>
@@ -292,7 +281,7 @@
                         <img class="img-fluid" src="img/destination-1.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">United States</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -301,7 +290,7 @@
                         <img class="img-fluid" src="img/destination-2.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">United Kingdom</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -310,7 +299,7 @@
                         <img class="img-fluid" src="img/destination-3.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">Australia</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -319,7 +308,7 @@
                         <img class="img-fluid" src="img/destination-4.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">India</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -328,7 +317,7 @@
                         <img class="img-fluid" src="img/destination-5.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">South Africa</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -337,7 +326,7 @@
                         <img class="img-fluid" src="img/destination-6.jpg" alt="">
                         <a class="destination-overlay text-white text-decoration-none" href="">
                             <h5 class="text-white">Indonesia</h5>
-                            <span>100 Cities</span>
+                            <span>10 Cities</span>
                         </a>
                     </div>
                 </div>
@@ -359,21 +348,21 @@
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-route mx-auto mb-4"></i>
                         <h5 class="mb-2">Travel Guide</h5>
-                        <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
+                        <p class="m-0">Our expert travel guides help you plan and enjoy your journey without any hassle.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
                         <h5 class="mb-2">Ticket Booking</h5>
-                        <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
+                        <p class="m-0">We provide quick and easy ticket booking services for flights, trains, and buses.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
                         <h5 class="mb-2">Hotel Booking</h5>
-                        <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
+                        <p class="m-0">We offer comfortable and budget-friendly hotel options for a pleasant stay.</p>
                     </div>
                 </div>
             </div>
@@ -395,15 +384,15 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Paris</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>4 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Explore extraordinary destinations around the globe with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.4 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹7350</h5>
                                 </div>
                             </div>
                         </div>
@@ -415,14 +404,14 @@
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>2 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>5 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Find your next favorite place—discover the world with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.3 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹8350</h5>
                                 </div>
                             </div>
                         </div>
@@ -433,15 +422,15 @@
                         <img class="img-fluid" src="img/package-3.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Italy</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>9 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>6 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Uncover breathtaking destinations worldwide with our help.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>3.6 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹3350</h5>
                                 </div>
                             </div>
                         </div>
@@ -452,15 +441,15 @@
                         <img class="img-fluid" src="img/package-4.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>U.S.A</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>5 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>7 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Step into unforgettable experiences across the world with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>2.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹9350</h5>
                                 </div>
                             </div>
                         </div>
@@ -471,15 +460,15 @@
                         <img class="img-fluid" src="img/package-5.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Greece</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>8 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>4 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Travel beyond the ordinary—discover amazing places with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹1350</h5>
                                 </div>
                             </div>
                         </div>
@@ -490,15 +479,15 @@
                         <img class="img-fluid" src="img/package-6.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>France</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>2 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>3 Person</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Embark on a world tour of amazing places with us.</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>3.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">₹6350</h5>
                                 </div>
                             </div>
                         </div>
@@ -517,15 +506,17 @@
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="mb-4">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Mega Offer</h6>
-                        <h1 class="text-white"><span class="text-primary">30% OFF</span> For Honeymoon</h1>
+                        <h1 class="text-white"><span class="text-primary">30% OFF</span> For College Groups</h1>
                     </div>
-                    <p class="text-white">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
+                    <p class="text-white">Enjoy exciting discounts on special travel packages and create unforgettable memories with your loved ones. We provide complete support and well-planned travel experiences at the best prices.
+</p>
                     <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Enjoy exciting discounts on special travel packages and create unforgettable memories with your loved ones.
+</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>We provide complete support and well-planned travel experiences at the best prices—so all you have to do is relax and enjoy.
+</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>From booking to smooth itineraries, we make your journey easy, comfortable, and truly memorable.
+</li>
                     </ul>
                 </div>
                 <div class="col-lg-5">
@@ -534,7 +525,7 @@
                             <h1 class="text-white m-0">Contact Us</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-white p-5">
-                            <form name="sentMessage" id="contactForm" action="contact_form.php" method="post">
+                            <form onsubmit="alert('Message Sent Successfully!'); return false;">
                                 <div class="form-row">
                                     <div class="control-group col-sm-6">
                                         <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name"
@@ -591,8 +582,8 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
+                            <h5 class="text-truncate">Sukanya Kumari</h5>
+                            <p class="m-0">Senior Travel Guide</p>
                         </div>
                     </div>
                 </div>
@@ -608,8 +599,8 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
+                            <h5 class="text-truncate">Vijay Kapoor</h5>
+                            <p class="m-0">Travel Expert</p>
                         </div>
                     </div>
                 </div>
@@ -625,8 +616,8 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
-                            <p class="m-0">Designation</p>
+                            <h5 class="text-truncate">Sneha Sharma</h5>
+                            <p class="m-0">Customer Manager</p>
                         </div>
                     </div>
                 </div>
@@ -642,7 +633,7 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
+                            <h5 class="text-truncate">Rohit Sharma</h5>
                             <p class="m-0">Designation</p>
                         </div>
                     </div>
@@ -663,38 +654,38 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="text-center pb-4">
                     <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <div class="testimonial-text bg-white p-4 mt-n5" onclick="alert('Client Review');">
+                        <p class="mt-5">The trip was beautifully planned and ran without a hitch. I had an amazing experience and highly recommend this service to others.
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Rahul Sharma</h5>
+                        <span>Software Engineer</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <div class="testimonial-text bg-white p-4 mt-n5" onclick="alert('Client Review');">
+                        <p class="mt-5">Everything was organized in a way that made the whole trip feel smooth and stress-free. I loved it and would definitely recommend this service.
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Unnati Singh</h5>
+                        <span>Custom Designer</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <div class="testimonial-text bg-white p-4 mt-n5" onclick="alert('Client Review');">
+                        <p class="mt-5">The itinerary was handled expertly, and the trip felt seamless from start to finish. I had an amazing experience and recommend it to anyone looking for a reliable service.
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Priya Verma</h5>
+                        <span>Marketing Manager</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;" >
-                    <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <div class="testimonial-text bg-white p-4 mt-n5" onclick="alert('Client Review');">
+                        <p class="mt-5">The trip organization was top-notch and everything went smoothly. I had an amazing time and would highly recommend this service to others.
                         </p>
-                        <h5 class="text-truncate">Client Name</h5>
-                        <span>Profession</span>
+                        <h5 class="text-truncate">Aarav Mehta</h5>
+                        <span>Entrepreneur</span>
                     </div>
                 </div>
             </div>
@@ -726,7 +717,7 @@
                                 <span class="text-primary px-2">|</span>
                                 <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
                             </div>
-                            <a class="h5 m-0 text-decoration-none" href="single.html">Dolor justo sea kasd lorem clita justo diam amet</a>
+                            <a class="h5 m-0 text-decoration-none" href="https://trendingbrezzy.blogspot.com/" target="_blank">Discover the best travel destinations, helpful tips, and expert guides to make your journey truly enjoyable and memorable.</a>
                         </div>
                     </div>
                 </div>
@@ -745,7 +736,8 @@
                                 <span class="text-primary px-2">|</span>
                                 <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
                             </div>
-                            <a class="h5 m-0 text-decoration-none" href="single.html">Dolor justo sea kasd lorem clita justo diam amet</a>
+                            <a class="h5 m-0 text-decoration-none" href="https://trendingbrezzy.blogspot.com/" target="_blank">Explore top travel destinations, practical travel tips, and inspiring guides—so you can turn every trip into an unforgettable experience.
+</a>
                         </div>
                     </div>
                 </div>
@@ -764,7 +756,8 @@
                                 <span class="text-primary px-2">|</span>
                                 <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
                             </div>
-                            <a class="h5 m-0 text-decoration-none" href="single.html">Dolor justo sea kasd lorem clita justo diam amet</a>
+                            <a class="h5 m-0 text-decoration-none" href="https://trendingbrezzy.blogspot.com/" target="_blank">Find your next dream destination with smart tips and trusted travel guides designed to make your journey smooth, fun, and memorable
+</a>
                         </div>
                     </div>
                 </div>
@@ -781,13 +774,15 @@
                 <a href="" class="navbar-brand">
                     <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <p>We are committed to providing high-quality travel services with affordable pricing and excellent customer support.
+</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://x.com/utkarshisingh" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/profile.php?id=61572640974966" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/in/utkarshi-singh/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/breezytrend/" target="_blank"><i class="fab fa-instagram"></i></a>
+
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -816,9 +811,9 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Location, City, Country</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Cheheru, Jalandhar, India</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 7825694130 </p>
+                <p><i class="fa fa-envelope mr-2"></i>utkarshi@gmail.com</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <form action="newsletter_sub.php" method="post">
@@ -864,6 +859,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
