@@ -17,6 +17,8 @@
 <h2>Your Cart</h2>
 <ul id="cart-items"></ul>
 <h3 id="total"></h3>
+<button onclick="clearCart()">Clear Cart</button>
+
 
 <script>
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -33,6 +35,11 @@ cart.forEach(item => {
 });
 
 document.getElementById("total").innerText = "Total: ₹" + total;
+function clearCart() {
+    localStorage.clear();
+    location.reload();
+}
+
 </script>
 
 
