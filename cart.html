@@ -21,21 +21,20 @@
 <script>
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function addToCart(name, price) {
-    cart.push({name, price});
-    localStorage.setItem("cart", JSON.stringify(cart));
+let total = 0;
+let list = document.getElementById("cart-items");
 
-    document.getElementById("cart-count").innerText = cart.length;
+cart.forEach(item => {
+    let li = document.createElement("li");
+    li.innerText = item.name + " - ₹" + item.price;
+    list.appendChild(li);
 
-    alert(name + " added to cart!");
-}
+    total += item.price;
+});
 
-window.onload = function() {
-    let savedCart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart = savedCart;
-    document.getElementById("cart-count").innerText = cart.length;
-}
+document.getElementById("total").innerText = "Total: ₹" + total;
 </script>
+
 
 
 </body>
